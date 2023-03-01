@@ -9,7 +9,7 @@ ok = 0
 for q in questions.keys():
     print(q)
     print(*questions[q][0], sep='\n')
-    answ = input()
+    answ = input("Введите номер правильного ответа: ")
     if answ in questions[q]:
         print('Yes!')
         ok += 1
